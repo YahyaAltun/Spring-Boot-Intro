@@ -105,6 +105,7 @@ import java.util.Map;
             return ResponseEntity.ok(list);
     }
 
+    //
     @GetMapping("/query/dto")
     public ResponseEntity<StudentDTO> getStudentDTO(@RequestParam("id") Long id){
         StudentDTO studentDTO=studentService.findStudentDTOById(id);
